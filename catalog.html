@@ -70,11 +70,19 @@
           </section>
           <div class="price">
             <h3>Стоимость в сутки (р):</h3>
-            <p>
-              <span>от 0 | до 3000</span>
+            <p class="price-field price-field-from">
+              <label>от
+                <input type="number" min="0" step="500" value="0">
+              </label>
+            </p>
+            <p class="price-field price-field-till">
+              <label>до
+                <input type="number" min="0" step="500" value="3000">
+              </label>
             </p>
             <p>
-              <span>х</span>
+              <input type="range" name="price-level">
+              <span class="second-controller"></span>
             </p>
           </div>
           <button class="form-btn" type="submit">Показать</button>
