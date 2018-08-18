@@ -80,7 +80,7 @@
                 <input type="number" min="0" step="500" value="3000">
               </label>
             </p>
-            <p>
+            <p class="price-range">
               <input type="range" name="price-level">
               <span class="second-controller"></span>
             </p>
@@ -90,7 +90,8 @@
         <section class="results-sorting">
           <h2 class="visually-hidden">Сортировка результатов отбора отелей</h2>
           <p class="hotels-selection-result">
-            Найдено: <span>3</span>
+            Найдено:
+            <output name="selection-quantity">3</output>
           </p>
           <div class="selection-mode">
             <p>Сортировка:<p>
@@ -102,10 +103,16 @@
           </div>
           <div class="sequence-selection">
             <button class="sequence-btn btn-up" type="button">
-              вверх
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+              <span class="visually-hidden">Отбор по возрастанию стоимости</span>
             </button>
             <button class="sequence-btn btn-down" type="button">
-              вниз
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+              <span class="visually-hidden">Отбор по убыванию стоимости</span>
             </button>
           </div>
         </section>
