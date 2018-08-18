@@ -102,12 +102,21 @@
                 <input type="text" name="departure-day" value="4 июля 2017">
                 <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="выбор даты в календаре"></a>
               </label>
+              <!--необходимо связать поле <input> с календарём-->
             </p>
-            <p>
-              <span class="adults-number-form">Взрослые:
-              - 2 + </span>
-              <span class="children-number-form">Дети: - 0 + </span>
-            </p>
+            <div class="half-width adults-number-form">
+              <label for="adults-counter-field">Взрослые:</label>
+              <button type="button">-</button>
+              <input type="number" name="adults-counter" id="adults-counter-field" value="2">
+              <button type="button">+</button>
+            </div>
+            <div class="half-width children-number-form">
+              <label for="children-counter-field">Дети:</label>
+              <button type="button">-</button>
+              <input type="number" name="children-counter" id="children-counter-field" value="0">
+              <button type="button">+</button>
+            </div>
+            <input type="submit" value="Найти">
           </form>
         </section>
       </main>
