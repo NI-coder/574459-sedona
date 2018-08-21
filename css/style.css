@@ -25,3 +25,45 @@ body {
 a {
   text-decoration: none;
 }
+
+.container {
+  color: #333333;
+
+  background-color: #e3f0f8;
+  background-image: url("../img/background-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  margin: 0 auto;
+}
+
+.site-navigation {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation ul {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-weight: 700;
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: #766357;
+}
