@@ -37,7 +37,7 @@ a {
   margin: 0 auto;
 }
 
-.site-navigation {
+.main-header {
   font-size: 24px;
   font-weight: 700;
   line-height: 26px;
@@ -66,4 +66,30 @@ a {
 
 .site-navigation a:active {
   color: #766357;
+}
+
+.main-intro {
+  text-align:center;
+}
+
+.advantages {
+  text-align:center;
+}
+
+.advantages-intro {
+  background-color: #ffffff;
+}
+
+.advantages-intro b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.advantages-intro p {
+  line-height: 26px;
+
 }
