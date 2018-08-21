@@ -91,5 +91,38 @@ a {
 
 .advantages-intro p {
   line-height: 26px;
+}
 
+.advantages-list,
+.list-item-extra {
+  list-style: none;
+}
+
+.list-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.list-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.item-info {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.extra-item {
+  background-color: #ffffff;
+}
+
+.extra-item h3
+.list-item-small h3 {
+  color: #000000;
+}
+
+.list-item-small {
+  background-color: #eeeeee;
 }
