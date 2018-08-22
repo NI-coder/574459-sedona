@@ -64,7 +64,8 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.site-navigation .current-item {
   color: #766357;
 }
 
@@ -211,6 +212,40 @@ a {
   background-color: #5496bd;
 }
 
+.hotels-selection-form h3 {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hotels-selection-form ul {
+  list-style: none;
+}
+
+.hotels-selection-form li,
+.hotels-selection-form p,
+.price-field input[type="text"],
+.hotels-selection-form .form-btn {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background-color: transparent;
+}
+
+.price-field input[type="text"],
+.hotels-selection-form .form-btn {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.hotels-selection-form .form-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .main-footer {
   text-align: center;
   vertical-align: middle;
@@ -233,7 +268,6 @@ a {
   padding: 0;
   list-style: none;
   text-align: center;
-  border: 1px dashed red;
 }
 
 .footer-social .social-btn {
