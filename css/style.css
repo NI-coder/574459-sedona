@@ -210,3 +210,54 @@ a {
 
   background-color: #5496bd;
 }
+
+.main-footer {
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.9;
+
+  background-color: #ffffff;
+}
+
+.footer-sedona-link a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  border: 1px dashed red;
+}
+
+.footer-social .social-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46px;
+  height: 48px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.footer-copyright {
+  margin: 0;
+  padding: 0;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 14px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.footer-copyright a {
+}
