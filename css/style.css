@@ -126,3 +126,46 @@ a {
 .list-item-small {
   background-color: #eeeeee;
 }
+
+.hotel-search {
+  text-align: center;
+}
+
+.search-white-background {
+  background-color: #ffffff;
+}
+
+.search-white-background b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.search-white-background p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
+.search-form-btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.search-form-btn:hover,
+.search-form-btn:focus {
+  background-color: #604e43;
+}
+
+.search-form-btn:active {
+  background-color: #503e33;
+}
