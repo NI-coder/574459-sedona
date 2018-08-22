@@ -156,9 +156,13 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  text-align: center;
+  vertical-align: middle;
   color: #ffffff;
 
   background-color: #766357;
+  border: none;
 }
 
 .search-form-btn:hover,
@@ -184,9 +188,13 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  text-align: center;
+  vertical-align: middle;
   color: #ffffff;
 
   background-color: #81b3d2;
+  border: none;
 }
 
 .hotel-search-form input[type="submit"]:hover,
