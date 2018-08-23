@@ -156,26 +156,31 @@ a {
 }
 
 .search-form-btn {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
 
   text-align: center;
   vertical-align: middle;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 
-  background-color: #766357;
+  background-color: rgba(118, 99, 87, 1);
   border: none;
+
+  width: 568px;
+  height: 86px;
 }
 
 .search-form-btn:hover,
 .search-form-btn:focus {
-  background-color: #604e43;
+  background-color: rgba(96, 78, 67, 1);
 }
 
 .search-form-btn:active {
-  background-color: #503e33;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(80, 62, 51, 1);
 }
 
 .hotel-search-form {
