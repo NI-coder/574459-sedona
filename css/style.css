@@ -332,29 +332,27 @@ a {
   background-color: #fefefe;
 }
 
+.mode-list a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(129, 179, 210, 1);
+}
+
 .mode-list .current {
-  color: #81b3d2;
+  color: rgba(129, 179, 210, 1);
   text-decoration: none;
   border: none;
 }
 
-.mode-list a {
-  color: #000000;
-  opacity: 0.3;
-  text-decoration: none;
-  border-bottom: 1px dotted #81b3d2;
-}
-
 .mode-list a:hover {
-  color: #81b3d2;
+  color: rgba(129, 179, 210, 1);
   text-decoration: none;
-  border-bottom: 1px dotted #81b3d2;
+  border-bottom: 1px dotted rgba(129, 179, 210, 1);
 }
 
 .mode-list a:active {
-  color: #000000;
-  text-decoration: none;
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  border: none;
 }
 
 .hotels-list {
