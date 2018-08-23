@@ -379,40 +379,44 @@ a {
   background-color: #ffffff;
 }
 
+.item-main-info .hotel-btn {
+  display: inline-block;
+}
+
 .hotel-btn a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
-.btn-info {
-  background-color: #81b3d2;
+.btn-info a {
+  background-color: rgba(129, 179, 210, 1);
 }
 
-.btn-info:hover,
-.btn-info:focus {
-  background-color: #669ec0;
+.btn-info a:hover,
+.btn-info a:focus {
+  background-color: rgba(102, 158, 192, 1);
 }
 
 .btn-info a:active {
-  opacity: 0.3;
-  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(84, 150, 189, 1);
 }
 
-.btn-booking {
-  background-color: #766357;
+.btn-booking a {
+  background-color: rgba(118, 99, 87, 1);
 }
 
-.btn-booking:hover,
-.btn-booking:focus {
-  background-color: #604e43;
+.btn-booking a:hover,
+.btn-booking a:focus {
+  background-color: rgba(96, 78, 67, 1);
 }
 
 .btn-booking a:active {
-  opacity: 0.3;
-  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(80, 62, 51, 1);
 }
 
 .hotel-rating {
