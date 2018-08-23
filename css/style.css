@@ -60,21 +60,22 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
-.site-navigation a:hover {
-  color: #81b3d2;
-}
-
+.site-navigation a:hover,
 .site-navigation a:focus {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(129, 179, 210, 1);
 }
 
-.site-navigation a:active,
-.site-navigation .current-item {
-  color: #766357;
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.current-item a,
+.current-item a:hover,
+.current-item a:active {
+  color: rgba(118, 99, 87, 1);
 }
 
 .main-intro {
