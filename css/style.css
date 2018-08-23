@@ -246,16 +246,50 @@ a {
 .hotels-selection-form .form-btn {
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
 
-  background-color: transparent;
+.infrastructure li:first-of-type {
+  background-color: rgba(95, 135, 171, 1);
+}
+
+.infrastructure li:nth-of-type(2) {
+  background-color: rgba(72, 115, 149, 1);
+}
+
+.infrastructure li:nth-of-type(3) {
+  background-color: rgba(60, 99, 132, 1);
+}
+
+.accomodation li:first-of-type {
+  background-color: rgba(103, 141, 180, 1);
+}
+
+.accomodation li:nth-of-type(2) {
+  background-color: rgba(97, 129, 168, 1);
+}
+
+.accomodation li:nth-of-type(3) {
+  background-color: rgba(65, 82, 92, 1);
+}
+
+.price h3 {
+  background-color: rgba(95, 94, 97, 1);
 }
 
 .price-field input[type="text"],
 .hotels-selection-form .form-btn {
   border: 2px solid #ffffff;
   border-radius: 2px;
-  background-color: transparent;
+}
+
+.price-field input[type="text"] {
+  background-color: rgba(67, 68, 72, 1);
+}
+
+.hotels-selection-form .form-btn {
+  background-color: rgba(111, 90, 83, 1);
 }
 
 .hotels-selection-form .form-btn:hover {
