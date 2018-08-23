@@ -193,30 +193,34 @@ a {
 }
 
 .hotel-search-form input[type="submit"] {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 
   text-align: center;
   vertical-align: middle;
-  color: #ffffff;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
 
-  background-color: #81b3d2;
+  background-color: rgba(129, 179, 210, 1);
   border: none;
+
+  width: 458px;
+  height: 58px;
 }
 
 .hotel-search-form input[type="submit"]:hover,
 .hotel-search-form input[type="submit"]:focus {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 
-  background-color: #669ec0;
+  background-color: rgba(102, 158, 192, 1);
 }
 
 .hotel-search-form input[type="submit"]:active {
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 
-  background-color: #5496bd;
+  background-color: rgba(84, 150, 189, 1);
 }
 
 .hotels-selection-form h3 {
