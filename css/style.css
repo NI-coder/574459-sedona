@@ -16,10 +16,11 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
-  text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 1);
+
+  background-color: rgba(242, 242, 242, 1);
 }
 
 a {
@@ -28,14 +29,17 @@ a {
 
 .container,
 .container-catalog {
-  color: #333333;
-
-  background-color: #e3f0f8;
-  background-image: url("../img/background-index.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(227, 240, 248, 1);
+  background-image: url("../img/background-index.jpg");
 }
 
 .container-catalog {
@@ -45,11 +49,11 @@ a {
 
 .main-header {
   font-size: 24px;
-  font-weight: 700;
   line-height: 26px;
-  color: #000000;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
 
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .site-navigation ul {
@@ -78,25 +82,15 @@ a {
   color: rgba(118, 99, 87, 1);
 }
 
-.main-intro {
-  text-align:center;
-}
-
-.advantages {
-  text-align:center;
-}
-
 .advantages-intro {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .advantages-intro b {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
 }
 
 .advantages-intro p {
@@ -114,52 +108,39 @@ a {
   font-weight: 700;
 }
 
-.list-item p {
-  font-size: 14px;
-  line-height: 21px;
-}
-
 .item-info {
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(129, 179, 210, 1);
 }
 
 .extra-item {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .extra-item h3
 .list-item-small h3 {
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .list-item-small {
-  background-color: #eeeeee;
-}
-
-.hotel-search {
-  text-align: center;
+  background-color: rgba(238, 238, 238, 1);
 }
 
 .search-white-background {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .search-white-background b {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000;
-
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
 }
 
 .search-white-background p {
   font-size: 14px;
   line-height: 24px;
-  color: #333333;
-
-  background-color: #ffffff;
+  color: rgba(51, 51, 51, 1);
 }
 
 .search-form-btn {
@@ -168,9 +149,6 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-
-  text-align: center;
-  vertical-align: middle;
   color: rgba(255, 255, 255, 1);
 
   background-color: rgba(118, 99, 87, 1);
@@ -191,12 +169,57 @@ a {
 }
 
 .hotel-search-form {
+  line-height: 26px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.hotel-search-form input[type="text"],
+.adults-number-form button,
+.children-number-form button {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
 
-  background-color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.hotel-search-form input[type="text"] {
+  color: rgba(0, 0, 0, 1);
+
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.hotel-search-form input[type="text"]:hover {
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.hotel-search-form input[type="text"]:focus {
+  outline: 2px solid rgba(229, 229, 229, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.adults-number-form button,
+.children-number-form button {
+  color: rgba(169, 169, 169, 1);
+
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.adults-number-form button:hover,
+.adults-number-form button:focus,
+.children-number-form button:hover,
+.children-number-form button:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.adults-number-form button:active,
+.children-number-form button:active {
+  color: rgba(129, 179, 210, 1);
 }
 
 .hotel-search-form input[type="submit"] {
