@@ -242,8 +242,6 @@ a {
 
 .hotel-search-form input[type="submit"]:hover,
 .hotel-search-form input[type="submit"]:focus {
-  color: rgba(255, 255, 255, 1);
-
   background-color: rgba(102, 158, 192, 1);
 }
 
@@ -255,9 +253,10 @@ a {
 
 .hotels-selection-form h3 {
   font-size: 16px;
-  line-height: 21px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+
+  background-color: rgba(95, 135, 171, 0.3);
 }
 
 .hotels-selection-form ul {
@@ -268,38 +267,36 @@ a {
 .hotels-selection-form p,
 .price-field input[type="text"],
 .hotels-selection-form .form-btn {
-  font-size: 14px;
-  line-height: 21px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
 }
 
 .infrastructure li:first-of-type {
-  background-color: rgba(95, 135, 171, 1);
+  background-color: rgba(95, 135, 171, 0.3);
 }
 
 .infrastructure li:nth-of-type(2) {
-  background-color: rgba(72, 115, 149, 1);
+  background-color: rgba(72, 115, 149, 0.3);
 }
 
 .infrastructure li:nth-of-type(3) {
-  background-color: rgba(60, 99, 132, 1);
+  background-color: rgba(60, 99, 132, 0.3);
 }
 
 .accomodation li:first-of-type {
-  background-color: rgba(103, 141, 180, 1);
+  background-color: rgba(103, 141, 180, 0.3);
 }
 
 .accomodation li:nth-of-type(2) {
-  background-color: rgba(97, 129, 168, 1);
+  background-color: rgba(97, 129, 168, 0.3);
 }
 
 .accomodation li:nth-of-type(3) {
-  background-color: rgba(65, 82, 92, 1);
+  background-color: rgba(65, 82, 92, 0.3);
 }
 
 .price h3 {
-  background-color: rgba(95, 94, 97, 1);
+  background-color: rgba(95, 94, 97, 0.3);
 }
 
 .price-field input[type="text"],
@@ -309,51 +306,40 @@ a {
 }
 
 .price-field input[type="text"] {
-  background-color: rgba(67, 68, 72, 1);
+  background-color: rgba(67, 68, 72, 0.3);
 }
 
 .hotels-selection-form .form-btn {
-  background-color: rgba(111, 90, 83, 1);
+  background-color: rgba(111, 90, 83, 0.3);
 }
 
 .hotels-selection-form .form-btn:hover {
-  color: #000000;
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .results-sorting {
-  color: #000000;
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(254, 254, 254, 1);
 }
 
 .hotels-selection-result {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
-.results-sorting {
-  background-color: #fefefe;
 }
 
 .selection-mode .mode-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .selection-mode p,
 .mode-list li {
   font-size: 12px;
   line-height: 18px;
-}
-
-.selection-mode p {
-  color: #000000;
-  background-color: #fefefe;
 }
 
 .mode-list a {
@@ -382,9 +368,11 @@ a {
 .hotels-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
-  color: #000000;
-  background-color: #fefefe;
+  color: rgba(0, 0, 0, 1);
+
+  background-color: rgba(254, 254, 254, 1);
 }
 
 .hotel-name a {
@@ -392,15 +380,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
-  color: #000000;
-}
-
-.hotel-info {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
 }
 
 .item-main-info .hotel-btn {
@@ -444,19 +424,19 @@ a {
 }
 
 .hotel-rating {
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
+  color: rgba(102, 102, 102, 1);
 
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .main-footer {
-  text-align: center;
-  vertical-align: middle;
   opacity: 0.9;
 
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.main-footer.catalog-footer {
+  background-color: rgba(254, 254, 254, 1);
 }
 
 .footer-sedona-link a {
@@ -465,7 +445,7 @@ a {
   font-weight: 700;
 
   text-decoration: none;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .footer-social {
@@ -480,23 +460,19 @@ a {
   vertical-align: middle;
   width: 46px;
   height: 48px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 
-  background-color: #81b3d2;
+  background-color: rgba(129, 179, 210, 1);
 }
 
 .footer-copyright {
   margin: 0;
   padding: 0;
 
+  line-height: 26px;
+
   display: inline-block;
   vertical-align: middle;
 
-  font-size: 14px;
-  line-height: 26px;
-
-  color: #000000;
-}
-
-.footer-copyright a {
+  color: rgba(0, 0, 0, 1);
 }
