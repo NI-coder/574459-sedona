@@ -18,14 +18,24 @@ body {
   font-weight: 400;
 
   text-transform: uppercase;
-  color: rgba(51, 51, 51, 1);
+  color: rgb(51, 51, 51);
 
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgb(242, 242, 242);
 }
 
 a {
   text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0;
+  border:0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+} 
 
 .container,
 .container-catalog {
@@ -38,12 +48,12 @@ a {
 }
 
 .container {
-  background-color: rgba(227, 240, 248, 1);
+  background-color: rgb(227, 240, 248);
   background-image: url("../img/background-index.jpg");
 }
 
 .container-catalog {
-  background-color: rgba(99, 114, 127, 1);
+  background-color: rgb(99, 114, 127);
   background-image: url("../img/background-catalog.jpg");
 }
 
@@ -51,25 +61,35 @@ a {
   font-size: 24px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .site-navigation ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 56px;
+  padding: 15px 70px;
 }
 
 .site-navigation a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  color: rgba(129, 179, 210, 1);
+  color: rgb(129, 179, 210);
 }
 
 .site-navigation a:active {
@@ -79,18 +99,18 @@ a {
 .current-item a,
 .current-item a:hover,
 .current-item a:active {
-  color: rgba(118, 99, 87, 1);
+  color: rgb(118, 99, 87);
 }
 
 .advantages-intro {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .advantages-intro b {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .advantages-intro p {
@@ -109,38 +129,38 @@ a {
 }
 
 .item-info {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(129, 179, 210, 1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(129, 179, 210);
 }
 
 .extra-item {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .extra-item h3
 .list-item-small h3 {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .list-item-small {
-  background-color: rgba(238, 238, 238, 1);
+  background-color: rgb(238, 238, 238);
 }
 
 .search-white-background {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .search-white-background b {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .search-white-background p {
   font-size: 14px;
   line-height: 24px;
-  color: rgba(51, 51, 51, 1);
+  color: rgb(51, 51, 51);
 }
 
 .search-form-btn {
@@ -149,9 +169,9 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 
-  background-color: rgba(118, 99, 87, 1);
+  background-color: rgb(118, 99, 87);
   border: none;
 
   width: 568px;
@@ -160,20 +180,20 @@ a {
 
 .search-form-btn:hover,
 .search-form-btn:focus {
-  background-color: rgba(96, 78, 67, 1);
+  background-color: rgb(96, 78, 67);
 }
 
 .search-form-btn:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(80, 62, 51, 1);
+  background-color: rgb(80, 62, 51);
 }
 
 .hotel-search-form {
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .hotel-search-form input[type="text"],
@@ -189,37 +209,37 @@ a {
 }
 
 .hotel-search-form input[type="text"] {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgb(242, 242, 242);
 }
 
 .hotel-search-form input[type="text"]:hover {
-  background-color: rgba(235, 235, 235, 1);
+  background-color: rgb(235, 235, 235);
 }
 
 .hotel-search-form input[type="text"]:focus {
-  outline: 2px solid rgba(229, 229, 229, 1);
-  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid rgb(229, 229, 229);
+  background-color: rgb(255, 255, 255);
 }
 
 .adults-number-form button,
 .children-number-form button {
-  color: rgba(169, 169, 169, 1);
+  color: rgb(169, 169, 169);
 
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgb(242, 242, 242);
 }
 
 .adults-number-form button:hover,
 .adults-number-form button:focus,
 .children-number-form button:hover,
 .children-number-form button:focus {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .adults-number-form button:active,
 .children-number-form button:active {
-  color: rgba(129, 179, 210, 1);
+  color: rgb(129, 179, 210);
 }
 
 .hotel-search-form input[type="submit"] {
@@ -231,9 +251,9 @@ a {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 
-  background-color: rgba(129, 179, 210, 1);
+  background-color: rgb(129, 179, 210);
   border: none;
 
   width: 458px;
@@ -242,19 +262,19 @@ a {
 
 .hotel-search-form input[type="submit"]:hover,
 .hotel-search-form input[type="submit"]:focus {
-  background-color: rgba(102, 158, 192, 1);
+  background-color: rgb(102, 158, 192);
 }
 
 .hotel-search-form input[type="submit"]:active {
   color: rgba(255, 255, 255, 0.3);
 
-  background-color: rgba(84, 150, 189, 1);
+  background-color: rgb(84, 150, 189);
 }
 
 .hotels-selection-form h3 {
   font-size: 16px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 
   background-color: rgba(95, 135, 171, 0.3);
 }
@@ -268,7 +288,7 @@ a {
 .price-field input[type="text"],
 .hotels-selection-form .form-btn {
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 }
 
 .infrastructure li:first-of-type {
@@ -301,7 +321,7 @@ a {
 
 .price-field input[type="text"],
 .hotels-selection-form .form-btn {
-  border: 2px solid #ffffff;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
 }
 
@@ -314,13 +334,13 @@ a {
 }
 
 .hotels-selection-form .form-btn:hover {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 .results-sorting {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(254, 254, 254, 1);
+  color: rgb(0, 0, 0);
+  background-color: rgb(254, 254, 254);
 }
 
 .hotels-selection-result {
@@ -345,23 +365,23 @@ a {
 .mode-list a {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  border-bottom: 1px dotted rgba(129, 179, 210, 1);
+  border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
 .mode-list .current {
-  color: rgba(129, 179, 210, 1);
+  color: rgb(129, 179, 210);
   text-decoration: none;
   border: none;
 }
 
 .mode-list a:hover {
-  color: rgba(129, 179, 210, 1);
+  color: rgb(129, 179, 210);
   text-decoration: none;
-  border-bottom: 1px dotted rgba(129, 179, 210, 1);
+  border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
 .mode-list a:active {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
   border: none;
 }
 
@@ -370,9 +390,9 @@ a {
   padding: 0;
 
   list-style: none;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 
-  background-color: rgba(254, 254, 254, 1);
+  background-color: rgb(254, 254, 254);
 }
 
 .hotel-name a {
@@ -380,7 +400,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .item-main-info .hotel-btn {
@@ -392,51 +412,49 @@ a {
   line-height: 21px;
   font-weight: 700;
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 }
 
 .btn-info a {
-  background-color: rgba(129, 179, 210, 1);
+  background-color: rgb(129, 179, 210);
 }
 
 .btn-info a:hover,
 .btn-info a:focus {
-  background-color: rgba(102, 158, 192, 1);
+  background-color: rgb(102, 158, 192);
 }
 
 .btn-info a:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(84, 150, 189, 1);
+  background-color: rgb(84, 150, 189);
 }
 
 .btn-booking a {
-  background-color: rgba(118, 99, 87, 1);
+  background-color: rgb(118, 99, 87);
 }
 
 .btn-booking a:hover,
 .btn-booking a:focus {
-  background-color: rgba(96, 78, 67, 1);
+  background-color: rgb(96, 78, 67);
 }
 
 .btn-booking a:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(80, 62, 51, 1);
+  background-color: rgb(80, 62, 51);
 }
 
 .hotel-rating {
-  color: rgba(102, 102, 102, 1);
+  color: rgb(102, 102, 102);
 
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgb(242, 242, 242);
 }
 
 .main-footer {
-  opacity: 0.9;
-
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.main-footer.catalog-footer {
-  background-color: rgba(254, 254, 254, 1);
+.catalog-footer {
+  background-color: rgb(254, 254, 254);
 }
 
 .footer-sedona-link a {
@@ -445,7 +463,7 @@ a {
   font-weight: 700;
 
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .footer-social {
@@ -460,9 +478,9 @@ a {
   vertical-align: middle;
   width: 46px;
   height: 48px;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 
-  background-color: rgba(129, 179, 210, 1);
+  background-color: rgb(129, 179, 210);
 }
 
 .footer-copyright {
@@ -474,5 +492,5 @@ a {
   display: inline-block;
   vertical-align: middle;
 
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
