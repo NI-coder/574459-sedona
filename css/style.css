@@ -548,6 +548,13 @@ a {
   min-height: 593px;
 }
 
+.main-footer,
+.catalog-footer {
+  display: flex;
+  width: 1200px;
+  min-height: 120px;
+}
+
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -556,20 +563,25 @@ a {
   background-color: rgb(254, 254, 254);
 }
 
+.footer-container {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(0, 0, 0);
+
+  list-style: none;
+
+  width: 400px;
+  height: 120px;
+
+}
+
 .footer-sedona-link a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
   text-decoration: none;
-  color: rgb(0, 0, 0);
-}
 
-.footer-social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 .footer-social .social-btn {
