@@ -109,12 +109,25 @@ a {
 }
 
 .main-intro {
+  display: flex;
+  flex-wrap: wrap;
+
   width: 1200px;
   min-height: 508px;
 }
 
 .main-intro-container {
+  width: 459px;
+  min-height: 353px;
+
+  margin:auto;
+  margin-top: 76px;
   margin-bottom: 21px;
+}
+
+.deco-poligon {
+  width: 100%;
+  min-height: 59px;
 }
 
 .advantages-intro {
