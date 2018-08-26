@@ -401,6 +401,7 @@ a {
 .hotels-selection-form ul {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -412,27 +413,27 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.infrastructure li:first-of-type {
+.infrastructure label:first-of-type {
   background-color: rgba(95, 135, 171, 0.3);
 }
 
-.infrastructure li:nth-of-type(2) {
+.infrastructure label:nth-of-type(2) {
   background-color: rgba(72, 115, 149, 0.3);
 }
 
-.infrastructure li:nth-of-type(3) {
+.infrastructure label:nth-of-type(3) {
   background-color: rgba(60, 99, 132, 0.3);
 }
 
-.accomodation li:first-of-type {
+.accomodation label:first-of-type {
   background-color: rgba(103, 141, 180, 0.3);
 }
 
-.accomodation li:nth-of-type(2) {
+.accomodation label:nth-of-type(2) {
   background-color: rgba(97, 129, 168, 0.3);
 }
 
-.accomodation li:nth-of-type(3) {
+.accomodation label:nth-of-type(3) {
   background-color: rgba(65, 82, 92, 0.3);
 }
 
@@ -460,6 +461,14 @@ a {
 }
 
 .results-sorting {
+  display: flex;
+
+  width: 1200px;
+  min-height: 86px;
+
+  padding-left: 72px;
+  padding-right: 74px;
+
   color: rgb(0, 0, 0);
   background-color: rgb(254, 254, 254);
 }
@@ -468,9 +477,21 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  width: 165px;
+  text-align: left;
+}
+
+.selection-mode {
+  display: flex;
+
+  width: 565px;
+  text-align: left;
 }
 
 .selection-mode .mode-list {
+  display: flex;
+
   margin: 0;
   padding: 0;
 
@@ -481,6 +502,9 @@ a {
 .mode-list li {
   font-size: 12px;
   line-height: 18px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .mode-list a {
@@ -506,7 +530,18 @@ a {
   border: none;
 }
 
+.sequence-selection {
+  width: 240px;
+  margin-left: auto;
+  text-align: right;
+}
+
 .hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 1200px;
+
   margin: 0;
   padding: 0;
 
