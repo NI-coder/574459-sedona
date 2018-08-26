@@ -42,7 +42,7 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
 
@@ -160,14 +160,34 @@ a {
   line-height: 26px;
 }
 
+.advantages-list,
+.list-item-big,
+.list-item-extra {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item-big:nth-of-type(2) .item-info {
+  order:2;
+}
+
 .advantages-list {
   width: 1200px;
   min-height: 1098px;
 }
 
-.advantages-list,
-.list-item-extra {
-  list-style: none;
+.advantages-list .list-item {
+  width: 400px;
+  min-height: 256px;
+}
+
+.advantages-list .extra-item {
+  min-height: 330px;
 }
 
 .list-item h3 {
@@ -195,7 +215,20 @@ a {
 }
 
 .search-white-background {
+  width: 1200px;
+  min-height: 290px;
+
   background-color: rgb(255, 255, 255);
+}
+
+.search-intro-container {
+  display: block;
+
+  width: 570px;
+  min-height: 290px;
+
+  margin: 0 auto;
+  padding-top: 1px;
 }
 
 .search-white-background b {
@@ -203,6 +236,11 @@ a {
   line-height: 36px;
   font-weight: 700;
   color: rgb(0, 0, 0);
+
+  display: block;
+
+  margin-top: 55px;
+  margin-bottom: 30px;
 }
 
 .search-white-background p {
@@ -210,8 +248,7 @@ a {
   line-height: 24px;
   color: rgb(51, 51, 51);
 
-  width: 1200px;
-  min-height: 291px;
+  margin-bottom: 55px;
 }
 
 .search-form-btn {
@@ -240,6 +277,12 @@ a {
 }
 
 .hotel-search-form {
+  display: block;
+  width: 568px;
+  height: 395px;
+
+  margin: 0 auto;
+
   line-height: 26px;
   font-weight: 700;
   color: rgb(0, 0, 0);
