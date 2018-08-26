@@ -365,6 +365,31 @@ a {
   background-color: rgb(84, 150, 189);
 }
 
+.hotels-selection-form {
+  display: flex;
+
+  width: 1200px;
+  min-height: 217px;
+
+  padding-left: 72px;
+  padding-right: 74px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hotels-selection-form .infrastructure,
+.hotels-selection-form .accomodation {
+  width: 255px;
+  text-align: left;
+}
+
+.hotels-selection-form .price {
+  width: 320px;
+
+  margin-left: auto;
+  text-align: right;
+}
+
 .hotels-selection-form h3 {
   font-size: 16px;
   font-weight: 700;
@@ -374,6 +399,8 @@ a {
 }
 
 .hotels-selection-form ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
