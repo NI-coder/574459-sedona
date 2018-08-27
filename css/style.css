@@ -115,20 +115,19 @@ a {
 
 .advantages-intro {
   min-height: 216px;
+  padding-top: 60px;
+  border: 1px solid rgba(255, 255, 255, 0);
 
   background-color: rgb(255, 255, 255);
 }
 
-.advantages-intro-container {
+.advantages-intro b {
   display: block;
 
   width: 576px;
-  min-height: 216px;
-
   margin: 0 auto;
-}
+  margin-bottom: 30px;
 
-.advantages-intro b {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -137,6 +136,10 @@ a {
 
 .advantages-intro p {
   line-height: 26px;
+  width: 576px;
+
+  margin: 0 auto;
+  margin-bottom: 53px;
 }
 
 .advantages-list,
