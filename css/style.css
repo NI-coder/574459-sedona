@@ -600,10 +600,6 @@ a {
   background-color: rgb(242, 242, 242);
 }
 
-.map-footer-container {
-  min-height: 593px;
-}
-
 .main-footer,
 .catalog-footer {
   display: flex;
