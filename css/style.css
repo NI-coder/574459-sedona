@@ -39,9 +39,6 @@ a {
 
 .container,
 .container-catalog {
-  background-position: top center;
-  background-repeat: no-repeat;
-
   width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -50,12 +47,9 @@ a {
   flex-wrap: wrap;
 }
 
-.container {
-  background-color: rgb(227, 240, 248);
-  background-image: url("../img/background-index.jpg");
-}
-
 .container-catalog {
+  background-position: center top;
+  background-repeat: no-repeat;
   background-color: rgb(99, 114, 127);
   background-image: url("../img/background-catalog.jpg");
 }
@@ -114,28 +108,16 @@ a {
 }
 
 .main-intro {
-  display: flex;
-  flex-wrap: wrap;
-
   width: 1200px;
-  min-height: 508px;
-}
+  min-height: 506px;
 
-.main-intro-container {
-  width: 459px;
-  min-height: 353px;
+  padding-top: 76px;
+  padding-bottom: 21px;
 
-  margin:auto;
-  margin-top: 76px;
-  margin-bottom: 21px;
-}
-
-.deco-poligon {
-  margin: 0;
-  padding: 0;
-
-  width: 100%;
-  min-height: 59px;
+  background-color: rgb(227, 240, 248), rgb(227, 240, 248);
+  background-image: url("../img/polygon-index.svg"), url("../img/background-index.jpg");
+  background-position: 0px 450px, center -56px;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .advantages-intro {
