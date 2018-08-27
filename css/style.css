@@ -394,8 +394,6 @@ a {
   font-size: 16px;
   font-weight: 700;
   color: rgb(255, 255, 255);
-
-  background-color: rgba(95, 135, 171, 0.3);
 }
 
 .hotels-selection-form ul {
@@ -411,34 +409,6 @@ a {
 .hotels-selection-form .form-btn {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-}
-
-.infrastructure label:first-of-type {
-  background-color: rgba(95, 135, 171, 0.3);
-}
-
-.infrastructure label:nth-of-type(2) {
-  background-color: rgba(72, 115, 149, 0.3);
-}
-
-.infrastructure label:nth-of-type(3) {
-  background-color: rgba(60, 99, 132, 0.3);
-}
-
-.accomodation label:first-of-type {
-  background-color: rgba(103, 141, 180, 0.3);
-}
-
-.accomodation label:nth-of-type(2) {
-  background-color: rgba(97, 129, 168, 0.3);
-}
-
-.accomodation label:nth-of-type(3) {
-  background-color: rgba(65, 82, 92, 0.3);
-}
-
-.price h3 {
-  background-color: rgba(95, 94, 97, 0.3);
 }
 
 .price-field input[type="text"],
