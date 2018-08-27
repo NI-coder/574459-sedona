@@ -18,6 +18,7 @@ body {
   font-weight: 400;
 
   text-transform: uppercase;
+  text-align: center;
   color: rgb(51, 51, 51);
 
   background-color: rgb(242, 242, 242);
@@ -41,10 +42,6 @@ a {
 .container-catalog {
   width: 1200px;
   margin: 0 auto;
-  text-align: center;
-
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .container-catalog {
@@ -55,15 +52,14 @@ a {
 }
 
 .main-header {
+  min-height: 56px;
+
   font-size: 24px;
   line-height: 26px;
   font-weight: 700;
   color: rgb(0, 0, 0);
 
   background-color: rgb(255, 255, 255);
-
-  width: 1200px;
-  min-height: 56px;
 }
 
 .site-navigation ul {
@@ -108,11 +104,8 @@ a {
 }
 
 .main-intro {
-  width: 1200px;
-  min-height: 506px;
-
   padding-top: 76px;
-  padding-bottom: 21px;
+  padding-bottom: 76px;
 
   background-color: rgb(227, 240, 248), rgb(227, 240, 248);
   background-image: url("../img/polygon-index.svg"), url("../img/background-index.jpg");
@@ -121,7 +114,6 @@ a {
 }
 
 .advantages-intro {
-  width: 1200px;
   min-height: 216px;
 
   background-color: rgb(255, 255, 255);
@@ -163,11 +155,6 @@ a {
   order:2;
 }
 
-.advantages-list {
-  width: 1200px;
-  min-height: 1098px;
-}
-
 .advantages-list .list-item {
   width: 400px;
   min-height: 256px;
@@ -202,7 +189,6 @@ a {
 }
 
 .search-white-background {
-  width: 1200px;
   min-height: 290px;
 
   background-color: rgb(255, 255, 255);
@@ -355,7 +341,6 @@ a {
 .hotels-selection-form {
   display: flex;
 
-  width: 1200px;
   min-height: 217px;
 
   padding-left: 72px;
@@ -405,11 +390,11 @@ a {
 }
 
 .price-field input[type="text"] {
-  background-color: rgba(67, 68, 72, 0.3);
+  background-color: rgba(67, 68, 72, 0);
 }
 
 .hotels-selection-form .form-btn {
-  background-color: rgba(111, 90, 83, 0.3);
+  background-color: rgba(111, 90, 83, 0);
 }
 
 .hotels-selection-form .form-btn:hover {
@@ -420,7 +405,6 @@ a {
 .results-sorting {
   display: flex;
 
-  width: 1200px;
   min-height: 86px;
 
   padding-left: 72px;
@@ -505,8 +489,6 @@ a {
   display: flex;
   flex-wrap: wrap;
 
-  width: 1200px;
-
   margin: 0;
   padding: 0;
 
@@ -519,7 +501,6 @@ a {
 .hotels-list-item {
   display: flex;
 
-  width: 1200px;
   min-height: 150px;
 
   padding-left: 72px;
@@ -617,14 +598,12 @@ a {
 }
 
 .map-footer-container {
-  width: 1200px;
   min-height: 593px;
 }
 
 .main-footer,
 .catalog-footer {
   display: flex;
-  width: 1200px;
   min-height: 120px;
 }
 
