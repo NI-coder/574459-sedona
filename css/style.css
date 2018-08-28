@@ -141,8 +141,8 @@ img {
 }
 
 .main-intro {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 76px;
+  padding-bottom: 73px;
 
   background-color: rgb(72, 81, 85);
   background-image: url("../img/polygon-index.svg"), url("../img/background-index.jpg");
@@ -152,18 +152,21 @@ img {
 
 .advantages-intro {
   min-height: 216px;
-  padding-top: 60px;
+  padding-top: 59px;
   border: 1px solid rgba(255, 255, 255, 0);
 
   background-color: rgb(255, 255, 255);
 }
 
 .advantages-intro b {
+  margin: 0;
+  padding: 0;
+
   display: block;
 
   width: 576px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   font-size: 21px;
   line-height: 26px;
@@ -171,9 +174,13 @@ img {
   color: rgb(0, 0, 0);
 }
 
+.advantages-intro .rare-text {
+  letter-spacing: 0.4px;
+}
+
 .advantages-intro p {
   line-height: 26px;
-  width: 576px;
+  letter-spacing: 0.1px;
 
   margin: 0 auto;
   margin-bottom: 53px;
