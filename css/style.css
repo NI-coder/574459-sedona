@@ -68,7 +68,7 @@ img {
   position: relative;
   min-height: 56px;
 
-  font-size: 24px;
+  font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: rgb(0, 0, 0);
@@ -95,17 +95,27 @@ img {
 }
 
 .site-navigation li {
-  padding-top: 11px;
+  padding-top: 14px;
   width: 20%;
   min-height: 56px;
 }
 
-.site-navigation li:nth-child(1) {
-  border-right: 3px solid rgb(0, 0, 0);
+.site-navigation .info {
+  padding-right: 3px;
 }
 
-.site-navigation li:nth-child(2) {
+.site-navigation .foto {
   margin-right: 20%;
+  padding-left: 2px;
+}
+
+.site-navigation .map {
+  letter-spacing: 0.4px;
+  padding-left: 4px;
+}
+
+.site-navigation .hotels {
+  padding-left: 15px;
 }
 
 .site-navigation a {
