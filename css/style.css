@@ -183,7 +183,7 @@ img {
   letter-spacing: 0.1px;
 
   margin: 0 auto;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
 }
 
 .advantages-list,
@@ -198,8 +198,21 @@ img {
   flex-wrap: wrap;
 }
 
-.list-item-big:nth-of-type(2) .item-info {
-  order:2;
+.list-item-big .item-image {
+  width: 800px;
+
+  background-color: rgb(152, 121, 110);
+  background-repeat: no-repeat;
+}
+
+.list-item-big:nth-of-type(1) .item-image {
+  background-image: url("../img/street-full.jpg");
+  background-position: 0 -79px;
+}
+
+.list-item-big:nth-of-type(2) .item-image {
+  background-image: url("../img/nature-full.jpg");
+  background-position: 0 -76px;
 }
 
 .advantages-list .list-item {
@@ -209,6 +222,8 @@ img {
 
 .advantages-list .extra-item {
   min-height: 330px;
+
+  background-color: rgb(255, 255, 255);
 }
 
 .list-item h3 {
@@ -217,13 +232,9 @@ img {
   font-weight: 700;
 }
 
-.item-info {
+.advantages-list .item-info {
   color: rgb(255, 255, 255);
   background-color: rgb(129, 179, 210);
-}
-
-.extra-item {
-  background-color: rgb(255, 255, 255);
 }
 
 .extra-item h3
