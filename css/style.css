@@ -93,21 +93,20 @@ img {
   min-height: 56px;
 }
 
-.site-navigation .info {
-  padding-right: 3px;
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  padding-left: 72px;
 }
 
-.site-navigation .foto {
+.site-navigation li:nth-child(4n-2) {
   margin-right: 20%;
-  padding-left: 2px;
 }
 
-.site-navigation .map {
-  padding-left: 4px;
-}
-
-.site-navigation .hotels {
-  padding-left: 15px;
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+  padding-right: 72px;
 }
 
 .site-navigation a {
