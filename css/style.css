@@ -103,7 +103,6 @@ img {
 }
 
 .site-navigation .map {
-  letter-spacing: 0.4px;
   padding-left: 4px;
 }
 
@@ -164,12 +163,10 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: rgb(0, 0, 0);
-  letter-spacing: 0.1px;
 }
 
 .advantages-intro p {
   line-height: 26px;
-  letter-spacing: 0.05px;
 
   margin: 0 auto;
   margin-bottom: 50px;
@@ -225,10 +222,6 @@ img {
   margin-bottom: 21px;
 }
 
-.list-item-small .rare-title {
-  letter-spacing: 0.4px;
-}
-
 .advantages-list .item-lead {
   display: block;
   width: 260px;
@@ -239,28 +232,12 @@ img {
   width: 300px;
 }
 
-.lead-1 .rare {
-  letter-spacing: 0.1px;
-}
-
 .item-lead.lead-2 {
   width: 320px;
 }
 
-.item-lead.lead-3 {
-  letter-spacing: 0.1px;
-}
-
 .item-lead.lead-4 {
   width: 280px;
-}
-
-.lead-4 .rare {
-  letter-spacing: 0.1px;
-}
-
-.item-lead.lead-5 {
-  letter-spacing: 0.1px;
 }
 
 .advantages-list .item-info {
@@ -304,10 +281,6 @@ img {
   padding: 0;
 
   width: 290px;
-}
-
-.extra-lead-3 {
-  letter-spacing: 0.1px;
 }
 
 .list-item-small {
@@ -417,7 +390,6 @@ img {
   padding-top: 6px;
 
   text-align: left;
-  letter-spacing: 0.2px;
 
   display: block;
   width: 100px;
@@ -869,7 +841,6 @@ img {
 
   width: 400px;
   height: 120px;
-
 }
 
 .footer-sedona-link a {
