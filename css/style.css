@@ -833,6 +833,20 @@ img {
   background-color: rgb(242, 242, 242);
 }
 
+.main img {
+  line-height: 0;
+}
+
+.footer-box {
+  position: relative;
+}
+
+.footer-box>.main-footer {
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+}
+
 .main-footer,
 .catalog-footer {
   display: flex;
