@@ -527,15 +527,16 @@ img {
   bottom: 0;
 }
 
-.half-width button line {
+.counter-btn  line {
+  stroke-width: 3;
   stroke: rgb(169, 169,169);
 }
 
-.half-width button:hover line {
+.counter-btn:hover line {
   stroke: rgb(0, 0, 0);
 }
 
-.half-width button:active line {
+.counter-btn:active line {
   stroke: rgb(129, 179, 210);
 }
 
