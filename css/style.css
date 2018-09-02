@@ -53,6 +53,7 @@ img {
 .container-catalog {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
@@ -836,18 +837,17 @@ img {
   background-color: rgb(242, 242, 242);
 }
 
-.main img {
+.map-image {
+  margin: 0;
+  padding: 0;
+  
   line-height: 0;
 }
 
-.footer-box {
-  position: relative;
-}
-
-.footer-box>.main-footer {
+.main-footer-box {
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: 0;
 }
 
 .main-footer,
