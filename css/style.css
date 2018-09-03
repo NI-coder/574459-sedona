@@ -33,7 +33,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -579,8 +579,8 @@ img {
   min-height: 217px;
 
   padding-left: 72px;
-  padding-right: 74px;
-  padding-top: 30px;
+  padding-right: 72px;
+  padding-top: 27px;
   padding-bottom: 30px;
 
   background-position: center -56px;
@@ -596,16 +596,24 @@ img {
 }
 
 .hotels-selection-form .price {
-  width: 320px;
+  width: 315px;
 
   margin-left: auto;
-  text-align: right;
+  text-align: left;
 }
 
 .hotels-selection-form h3 {
   font-size: 16px;
   font-weight: 700;
   color: rgb(255, 255, 255);
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.price h3 {
+  margin-bottom: 10px;
 }
 
 .hotels-selection-form ul {
@@ -621,6 +629,52 @@ img {
 .hotels-selection-form .form-btn {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+}
+
+.hotels-selection-form li {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.hotels-selection-form li:last-child {
+  margin-bottom: 0;
+}
+
+.hotels-selection-checkbox {
+  position:relative;
+
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.accomodation .hotels-selection-checkbox {
+  padding-left: 42px;
+}
+
+.hotels-selection-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.hotels-selection-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.hotels-selection-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.hotels-selection-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .price-field input[type="text"],
@@ -840,7 +894,7 @@ img {
 .map-image {
   margin: 0;
   padding: 0;
-  
+
   line-height: 0;
 }
 
