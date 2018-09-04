@@ -906,6 +906,9 @@ img {
 
 .hotels-selection-result,
 .catalog-item-image {
+  margin: 0;
+  padding: 0;
+
   width: 165px;
   text-align: left;
 }
@@ -921,8 +924,7 @@ img {
   flex-shrink: 0;
 }
 
-.selection-mode,
-.item-main-info {
+.selection-mode {
   width: 565px;
   text-align: left;
 }
@@ -1007,9 +1009,9 @@ img {
   fill: rgb(129, 179, 210)
 }
 
-
 .hotels-list {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
 
   margin: 0;
@@ -1023,13 +1025,43 @@ img {
 
 .hotels-list-item {
   display: flex;
+  flex-shrink: 0;
 
+  width: 100%;
   min-height: 150px;
 
-  padding-left: 72px;
-  padding-right: 74px;
+  margin: 0;
+  padding: 30px 72px;
+  padding-top: 25px;
 
   border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.hotels-list-item .catalog-item-image {
+  margin-top: 5px;
+
+  line-height: 0;
+}
+
+.hotels-list-item .item-main-info {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  width: 365px;
+}
+
+.item-main-info h3 {
+  display: block;
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+
+  text-align: left;
 }
 
 .hotel-name a {
@@ -1040,11 +1072,35 @@ img {
   color: rgb(0, 0, 0);
 }
 
-.item-main-info .hotel-btn {
-  display: inline-block;
+.item-main-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.item-main-info .hotel-info {
+  margin-bottom: 14px;
+
+  text-align: left;
+}
+
+.item-main-info .hotel-type,
+.item-main-info .btn-info {
+  width: 110px;
+  margin-right: 6px;
+}
+
+.item-main-info .hotel-price,
+.item-main-info .btn-booking {
+  width: 142px;
 }
 
 .hotel-btn a {
+  display: block;
+
+  height: 27px;
+
+  padding-top: 3px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -1082,10 +1138,12 @@ img {
 
 .hotel-stars {
   display: block;
-  height: 27px;
+  height: 17px;
 
-  margin-top: 29px;
+  margin: 0;
+  margin-top: 3px;
   margin-bottom: 47px;
+  padding: 0;
 
   background: url("../img/star.svg") repeat-x;
 }
@@ -1111,10 +1169,11 @@ img {
   width: 110px;
   height: 27px;
 
+  margin: 0;
   margin-left: 130px;
-  margin-bottom: 30px;
-  padding-top: 5px;
-  padding-left: 10px;
+  padding-top: 4px;
+
+  text-align: center;
 
   color: rgb(102, 102, 102);
   background-color: rgb(242, 242, 242);
