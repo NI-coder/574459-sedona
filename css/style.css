@@ -579,7 +579,7 @@ img {
   min-height: 217px;
 
   padding-left: 72px;
-  padding-right: 72px;
+  padding-right: 71px;
   padding-top: 27px;
   padding-bottom: 30px;
 
@@ -596,7 +596,7 @@ img {
 }
 
 .hotels-selection-form .price {
-  width: 315px;
+  width: 318px;
 
   margin-left: auto;
   text-align: left;
@@ -613,6 +613,7 @@ img {
 }
 
 .price h3 {
+  margin-left: 2px;
   margin-bottom: 10px;
 }
 
@@ -677,14 +678,216 @@ img {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.price-field input[type="text"],
-.hotels-selection-form .form-btn {
+.hotels-selection-form .price-field {
+  position: relative;
+
+  height: 36px;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
   border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
 }
 
-.price-field input[type="text"] {
+.hotels-selection-form .price-field::after {
+  position: absolute;
+  content: "";
+
+  width: 2px;
+  height: 22px;
+
+  top: 50%;
+  left: 50%;
+
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+}
+
+.price-field label {
+  display: inline-block;
+
+  width: 157px;
+
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-field .min-price {
+  padding-left: 65px;
+}
+
+.price-field .max-price {
+  padding-left: 54px;
+}
+
+.price-field input {
+  margin: 0;
+
+  background: none;
+  border: none;
+}
+
+.price-field input[name="min-price"] {
+  width: 70px;
+}
+
+.price-field input[name="max-price"] {
+  width: 79px;
+}
+
+/* поля ввода стоимости (сделал сам)
+
+.hotels-selection-form .price-field {
+  display: flex;
+  flex-shrink: 0;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  width: 318px;
+  height: 36px;
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.hotels-selection-form .price-field::after {
+  position: absolute;
+  content: "";
+
+  width: 2px;
+  height: 22px;
+
+  top: 5px;
+  left: 157px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.price-field label {
+  position: absolute;
+
+  width: 20px;
+  height: 32px;
+
+  top: 6px;
+
+  cursor: pointer;
+}
+
+.price-field label:nth-of-type(1) {
+  left: 66px;
+}
+
+.price-field label:nth-of-type(2) {
+  right: 82px;
+}
+
+.price-field input {
+  margin: 0;
+  padding: 0;
+
+  line-height: 0;
+
+  width: 157px;
+  height: 32px;
+  border: none;
+
   background-color: rgba(67, 68, 72, 0);
+
+  cursor: pointer;
+}
+
+.price-field input:nth-of-type(1) {
+  padding-left: 86px;
+}
+
+.price-field input:nth-of-type(2) {
+  padding-left: 77px;
+}
+*/
+
+.hotels-selection-form .price-range {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.price-range .scale {
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.price-range .bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.price-range .range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.price-range .range-toggle:hover {
+  width: 22px;
+  height: 22px;
+}
+
+.price-range .range-toggle-min {
+  left: 0;
+}
+
+.price-range .range-toggle-max {
+  left: 80%;
+}
+
+.hotels-selection-form .form-btn {
+  display: block;
+  width: 138px;
+
+  margin: 0;
+  margin-left: 84px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 35px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+
+  background-color: rgba(111, 90, 83, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/*
+.hotels-selection-form .form-btn {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
 }
 
 .hotels-selection-form .form-btn {
@@ -695,7 +898,7 @@ img {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
-
+*/
 .results-sorting {
   display: flex;
 

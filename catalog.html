@@ -86,20 +86,17 @@
           </section>
           <div class="price">
             <h3>Стоимость в сутки (р):</h3>
-            <p class="price-field price-field-from">
-              <label>От
-                <input type="text" name="price-min" value="0">
-              </label>
+            <p class="price-field">
+              <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
             </p>
-            <p class="price-field price-field-till">
-              <label>До
-                <input type="text" name="price-max" value="3000">
-              </label>
-            </p>
-            <p class="price-range">
-              <input type="range" name="price-level">
-              <span class="second-controller"></span>
-            </p>
+            <div class="price-range">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
             <button class="form-btn" type="submit">Показать</button>
           </div>
         </form>
