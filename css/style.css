@@ -892,21 +892,16 @@ img {
 
 .results-sorting {
   display: flex;
+  align-items: center;
 
-  min-height: 86px;
+  min-height: 87px;
 
   padding-left: 72px;
-  padding-right: 74px;
+  padding-right: 72px;
 
   color: rgb(0, 0, 0);
   background-color: rgb(254, 254, 254);
   border-bottom: 1px solid rgb(229, 229, 229);
-}
-
-.hotels-selection-result {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
 }
 
 .hotels-selection-result,
@@ -915,8 +910,15 @@ img {
   text-align: left;
 }
 
+.hotels-selection-result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
 .selection-mode {
   display: flex;
+  flex-shrink: 0;
 }
 
 .selection-mode,
@@ -927,6 +929,7 @@ img {
 
 .selection-mode .mode-list {
   display: flex;
+  flex-shrink: 0;
 
   margin: 0;
   padding: 0;
@@ -943,7 +946,19 @@ img {
   padding: 0;
 }
 
+.selection-mode p {
+  /* по макету должен быть 40px */
+  margin-right: 20px;
+}
+
+.mode-list li {
+  margin-right: 33px;
+}
+
 .mode-list a {
+  margin: 0;
+  padding: 0;
+
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   border-bottom: 1px dotted rgb(129, 179, 210);
@@ -972,6 +987,26 @@ img {
   margin-left: auto;
   text-align: right;
 }
+
+.sequence-selection a:last-child {
+  margin-left: 10px;
+}
+
+.sequence-selection-defaul path {
+  fill: rgb(202, 202, 202)
+}
+
+.sequence-selection-defaul:hover path,
+.sequence-selection-current:hover path {
+  fill: rgb(35, 31, 32)
+}
+
+.sequence-selection-current path,
+.sequence-selection-current:active path,
+.sequence-selection-defaul:active path {
+  fill: rgb(129, 179, 210)
+}
+
 
 .hotels-list {
   display: flex;
