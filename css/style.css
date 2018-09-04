@@ -863,6 +863,7 @@ img {
 }
 
 .hotels-selection-form .form-btn {
+/* кнопка не по центру блока и не макетной ширины, но pixel perfect в Google Chrome */
   display: block;
   width: 138px;
 
@@ -884,21 +885,11 @@ img {
   cursor: pointer;
 }
 
-/*
-.hotels-selection-form .form-btn {
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 2px;
-}
-
-.hotels-selection-form .form-btn {
-  background-color: rgba(111, 90, 83, 0);
-}
-
 .hotels-selection-form .form-btn:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
-*/
+
 .results-sorting {
   display: flex;
 
