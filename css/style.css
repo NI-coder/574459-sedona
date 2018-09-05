@@ -110,6 +110,10 @@ img {
   padding-right: 74px;
 }
 
+.site-navigation li:nth-child(4) {
+  padding-right: 71px;
+}
+
 .site-navigation a {
   font-size: 14px;
   line-height: 26px;
@@ -579,7 +583,7 @@ img {
   min-height: 217px;
 
   padding-left: 72px;
-  padding-right: 71px;
+  padding-right: 72px;
   padding-top: 27px;
   padding-bottom: 30px;
 
@@ -742,80 +746,6 @@ img {
   width: 79px;
 }
 
-/* поля ввода стоимости (сделал сам)
-
-.hotels-selection-form .price-field {
-  display: flex;
-  flex-shrink: 0;
-
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-
-  width: 318px;
-  height: 36px;
-
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 2px;
-}
-
-.hotels-selection-form .price-field::after {
-  position: absolute;
-  content: "";
-
-  width: 2px;
-  height: 22px;
-
-  top: 5px;
-  left: 157px;
-
-  background-color: rgb(255, 255, 255);
-}
-
-.price-field label {
-  position: absolute;
-
-  width: 20px;
-  height: 32px;
-
-  top: 6px;
-
-  cursor: pointer;
-}
-
-.price-field label:nth-of-type(1) {
-  left: 66px;
-}
-
-.price-field label:nth-of-type(2) {
-  right: 82px;
-}
-
-.price-field input {
-  margin: 0;
-  padding: 0;
-
-  line-height: 0;
-
-  width: 157px;
-  height: 32px;
-  border: none;
-
-  background-color: rgba(67, 68, 72, 0);
-
-  cursor: pointer;
-}
-
-.price-field input:nth-of-type(1) {
-  padding-left: 86px;
-}
-
-.price-field input:nth-of-type(2) {
-  padding-left: 77px;
-}
-*/
-
 .hotels-selection-form .price-range {
   position: relative;
 
@@ -863,16 +793,13 @@ img {
 }
 
 .hotels-selection-form .form-btn {
-/* кнопка не по центру блока и не макетной ширины, но pixel perfect в Google Chrome */
   display: block;
   width: 138px;
+  height: 36px;
 
   margin: 0;
   margin-left: 84px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 35px;
-  padding-right: 40px;
+  padding: 6px 35px;
 
   font-size: 14px;
   line-height: 21px;
@@ -897,7 +824,7 @@ img {
   min-height: 87px;
 
   padding-left: 72px;
-  padding-right: 72px;
+  padding-right: 73px;
 
   color: rgb(0, 0, 0);
   background-color: rgb(254, 254, 254);
@@ -922,9 +849,7 @@ img {
 .selection-mode {
   display: flex;
   flex-shrink: 0;
-}
 
-.selection-mode {
   width: 565px;
   text-align: left;
 }
@@ -949,8 +874,7 @@ img {
 }
 
 .selection-mode p {
-  /* по макету должен быть 40px */
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .mode-list li {
@@ -991,7 +915,7 @@ img {
 }
 
 .sequence-selection a:last-child {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .sequence-selection-defaul path {
@@ -1031,8 +955,10 @@ img {
   min-height: 150px;
 
   margin: 0;
-  padding: 30px 72px;
   padding-top: 25px;
+  padding-right: 73px;
+  padding-left: 72px;
+  padding-bottom: 30px;
 
   border-bottom: 1px solid rgb(229, 229, 229);
 }
@@ -1140,27 +1066,26 @@ img {
   display: block;
   height: 17px;
 
-  margin: 0;
   margin-top: 3px;
+  margin-left: auto;
   margin-bottom: 47px;
+  margin-right: 0;
   padding: 0;
 
-  background: url("../img/star.svg") repeat-x;
+  background: url("../img/star.svg");
+  background-repeat: space;
 }
 
 .amara-hotel-stars {
-  width: 73px;
-  margin-left: 167px;
+  width: 89px;
 }
 
 .desert-hotel-stars {
-  width: 55px;
-  margin-left: 185px;
+  width: 65px;
 }
 
 .villas-hotel-stars {
-  width: 37px;
-  margin-left: 203px;
+  width: 41px;
 }
 
 .hotel-rating {
@@ -1172,8 +1097,7 @@ img {
   margin: 0;
   margin-left: 130px;
   padding-top: 4px;
-
-  text-align: center;
+  padding-right: 11px;
 
   color: rgb(102, 102, 102);
   background-color: rgb(242, 242, 242);
