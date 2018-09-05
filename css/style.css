@@ -526,16 +526,6 @@ img {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.half-width button:hover {
-  background-color: rgb(235, 235, 235);
-}
-
-.half-width button:focus,
-.half-width button:active {
-  outline: 2px solid rgb(229, 229, 229);
-  background-color: rgb(255, 255, 255);
-}
-
 .half-width .minus {
   right: 76px;
   bottom: 0;
@@ -551,7 +541,8 @@ img {
   stroke: rgb(169, 169,169);
 }
 
-.counter-btn:hover line {
+.counter-btn:hover line,
+.counter-btn:focus line {
   stroke: rgb(0, 0, 0);
 }
 
