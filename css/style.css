@@ -473,7 +473,9 @@ img {
 }
 
 .arrival-date-btn:hover svg,
-.departure-date-btn:hover svg {
+.arrival-date-btn:focus svg,
+.departure-date-btn:hover svg,
+.departure-date-btn:focus svg {
   fill: rgb(0, 0, 0);
 }
 
@@ -511,7 +513,6 @@ img {
   height: 38px;
   text-align: center;
   border: none;
-  outline: none;
 }
 
 .half-width input {
@@ -523,6 +524,16 @@ img {
   width: 38px;
 
   background-color: rgba(255, 255, 255, 0);
+}
+
+.half-width button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.half-width button:focus,
+.half-width button:active {
+  outline: 2px solid rgb(229, 229, 229);
+  background-color: rgb(255, 255, 255);
 }
 
 .half-width .minus {
