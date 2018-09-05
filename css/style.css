@@ -998,6 +998,14 @@ img {
   color: rgb(0, 0, 0);
 }
 
+.hotel-name a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.hotel-name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .item-main-info p {
   margin: 0;
   padding: 0;
