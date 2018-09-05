@@ -1148,7 +1148,7 @@ img {
   text-align: center;
 
   width: 400px;
-  height: 120px;
+  min-height: 120px;
 }
 
 .footer-sedona-link {
@@ -1164,16 +1164,20 @@ img {
   color: rgb(0, 0, 0);
 }
 
-.footer-social {
+.footer-social ul {
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
   justify-content: space-between;
+  align-items: center;
+
+  width: 150px;
+
+  margin: 0 auto;
+  margin-top: 36px;
+  padding: 0;
 
   list-style: none;
-
-  padding-top: 36px;
-  padding-left: 125px;
-  padding-right: 125px;
 }
 
 .footer-social .social-btn {
