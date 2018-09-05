@@ -1167,7 +1167,7 @@ img {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
   list-style: none;
 
@@ -1178,39 +1178,17 @@ img {
 
 .footer-social .social-btn {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: center;
 
   width: 46px;
   height: 48px;
 
-  margin-right: 6px;
-
   background-color: rgb(129, 179, 210);
-}
-
-.footer-social .social-btn:last-child {
-  margin-right: 0;
-}
-
-.social-btn a {
-  line-height: 0;
 }
 
 .social-btn path {
   fill: rgb(255, 255, 255);
-}
-
-.footer-social .btn-twitter {
-  padding-top: 17px;
-}
-
-.footer-social .btn-fb {
-  padding-top: 13px;
-}
-
-.footer-social .btn-youtube {
-  padding-top: 16px;
 }
 
 .footer-social .social-btn:hover,
