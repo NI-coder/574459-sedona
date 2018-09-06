@@ -525,6 +525,11 @@ img {
   margin-bottom: 54px;
 }
 
+.half-width input[type="text"] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .adults-number-form {
   width: 227px;
 }
