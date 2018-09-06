@@ -134,37 +134,41 @@
                 </p>
                 <div class="half-width adults-number-form">
                   <label for="adults-counter-field">Взрослые:</label>
-                  <button class="counter-btn minus" type="button">
-                    <span class="visually-hidden">Кнопка уменьшения количества</span>
-                    <svg width="38" height="38">
-                      <line x1="13" y1="19" x2="23" y2="19"/>
-                    </svg>
-                  </button>
-                  <input type="text" name="adults-counter" id="adults-counter-field" value="2">
-                  <button class="counter-btn plus" type="button">
-                    <span class="visually-hidden">Кнопка увеличения количества</span>
-                    <svg width="38" height="38">
-                      <line x1="12" y1="19" x2="23" y2="19"/>
-                      <line x1="17.5" y1="13.5" x2="17.5" y2="24.5"/>
-                    </svg>
-                  </button>
+                  <div class="adults-inner-container">
+                    <button class="counter-btn minus" type="button">
+                      <span class="visually-hidden">Кнопка уменьшения количества</span>
+                      <svg width="38" height="38">
+                        <line x1="13" y1="19" x2="23" y2="19"/>
+                      </svg>
+                    </button>
+                    <input type="text" name="adults-counter" id="adults-counter-field" value="2">
+                    <button class="counter-btn plus" type="button">
+                      <span class="visually-hidden">Кнопка увеличения количества</span>
+                      <svg width="38" height="38">
+                        <line x1="12" y1="19" x2="23" y2="19"/>
+                        <line x1="17.5" y1="13.5" x2="17.5" y2="24.5"/>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <div class="half-width children-number-form">
                   <label for="children-counter-field">Дети:</label>
-                  <button class="counter-btn minus" type="button">
-                    <span class="visually-hidden">Кнопка уменьшения количества</span>
-                    <svg width="38" height="38">
-                      <line x1="13" y1="19" x2="23" y2="19" stroke="rgb(169, 169,169)" stroke-width="3"/>
-                    </svg>
-                  </button>
-                  <input type="text" name="children-counter" id="children-counter-field" value="0">
-                  <button class="counter-btn plus" type="button">
-                    <span class="visually-hidden">Кнопка увеличения количества</span>
-                    <svg width="38" height="38">
-                      <line x1="12" y1="19" x2="23" y2="19" stroke="rgb(169, 169,169)" stroke-width="3"/>
-                      <line x1="17.5" y1="13.5" x2="17.5" y2="24.5" stroke="rgb(169, 169,169)" stroke-width="3"/>
-                    </svg>
+                  <div class="children-inner-container">
+                    <button class="counter-btn minus" type="button">
+                      <span class="visually-hidden">Кнопка уменьшения количества</span>
+                      <svg width="38" height="38">
+                        <line x1="13" y1="19" x2="23" y2="19" stroke="rgb(169, 169,169)" stroke-width="3"/>
+                      </svg>
                     </button>
+                    <input type="text" name="children-counter" id="children-counter-field" value="0">
+                    <button class="counter-btn plus" type="button">
+                      <span class="visually-hidden">Кнопка увеличения количества</span>
+                      <svg width="38" height="38">
+                        <line x1="12" y1="19" x2="23" y2="19" stroke="rgb(169, 169,169)" stroke-width="3"/>
+                        <line x1="17.5" y1="13.5" x2="17.5" y2="24.5" stroke="rgb(169, 169,169)" stroke-width="3"/>
+                      </svg>
+                      </button>
+                  </div>
                 </div>
                 <input type="submit" value="Найти">
               </form>
