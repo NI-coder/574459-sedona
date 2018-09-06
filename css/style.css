@@ -717,32 +717,16 @@ img {
   background-image: url("../img/checkbox-on.svg");
 }
 
-
-/*
-.hotels-selection-item input[type="checkbox"] + .checkbox-indicator {
-  position: absolute;
-  top: -2px;
-  left: 0;
-
-  width: 27px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-}
-
-
-.hotels-selection-item input[type="checkbox"]:checked + .checkbox-indicator {
-  background-image: url("../img/checkbox-on.svg");
-}
-*/
-
 .hotels-selection-checkbox input:disabled + .hotels-selection-label::before {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .hotels-selection-checkbox input:checked:disabled + .hotels-selection-label::before {
   background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.hotels-selection-checkbox input:focus + .hotels-selection-label {
+  border: 2px solid rgb(60, 50, 158);
 }
 
 .hotels-selection-form .price-field {
