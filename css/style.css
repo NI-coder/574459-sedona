@@ -1,11 +1,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -44,7 +46,9 @@ img {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -55,7 +59,9 @@ img {
   margin: 0 auto;
   position: relative;
 
-  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+
+          box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
@@ -83,8 +89,13 @@ img {
 
   list-style: none;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -186,8 +197,13 @@ img {
 
   list-style: none;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .advantages-list .list-item {
@@ -358,11 +374,18 @@ img {
 }
 
 .hotel-search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   position: absolute;
   width: 568px;
@@ -385,8 +408,14 @@ img {
 
   margin-bottom: 30px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   width: 460px;
   color: rgb(0, 0, 0)
@@ -485,8 +514,12 @@ img {
 }
 
 .hotel-search-form .half-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   position: relative;
   margin-bottom: 54px;
@@ -580,6 +613,8 @@ img {
 }
 
 .hotels-selection-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   min-height: 217px;
@@ -710,7 +745,9 @@ img {
   left: 50%;
 
   background-color: rgb(255, 255, 255);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-field label {
@@ -777,7 +814,8 @@ img {
   background: rgb(171, 171, 171);
   border: 8px solid rgb(255, 255, 255);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -820,8 +858,12 @@ img {
 }
 
 .results-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   min-height: 87px;
 
@@ -849,16 +891,22 @@ img {
 }
 
 .selection-mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   width: 565px;
   text-align: left;
 }
 
 .selection-mode .mode-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   margin: 0;
   padding: 0;
@@ -936,9 +984,13 @@ img {
 }
 
 .hotels-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -950,8 +1002,11 @@ img {
 }
 
 .hotels-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   width: 100%;
   min-height: 150px;
@@ -972,11 +1027,18 @@ img {
 }
 
 .hotels-list-item .item-main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 
   width: 365px;
 }
@@ -1128,6 +1190,8 @@ img {
 
 .main-footer,
 .catalog-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 120px;
 }
@@ -1165,11 +1229,19 @@ img {
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 150px;
 
@@ -1181,9 +1253,15 @@ img {
 }
 
 .footer-social .social-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 46px;
   height: 48px;
@@ -1208,9 +1286,15 @@ img {
 }
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   padding-left: 5px;
 
