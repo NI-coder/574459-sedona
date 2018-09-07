@@ -731,7 +731,10 @@ img {
 }
 
 .hotels-selection-checkbox input:focus + .hotels-selection-label {
-  border: 2px solid rgb(60, 50, 158);
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline-color: rgb(60, 50, 158);
 }
 
 .hotels-selection-form .price-field {
@@ -835,8 +838,7 @@ img {
 }
 
 .price-range .range-toggle:hover {
-  width: 22px;
-  height: 22px;
+  transform: scale(1.1);
 }
 
 .price-range .range-toggle-min {
