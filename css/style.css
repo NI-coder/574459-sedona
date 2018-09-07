@@ -955,7 +955,9 @@ img {
   border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
-.mode-list .current {
+.mode-list .current,
+.mode-list .current:hover,
+.mode-list .current:active {
   color: rgb(129, 179, 210);
   text-decoration: none;
   border: none;
