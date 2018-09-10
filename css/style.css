@@ -1200,6 +1200,7 @@ img {
 
   line-height: 0;
 
+  background-color: rgb(242, 242, 242);
   background-image: url("../img/map.jpg");
 }
 
