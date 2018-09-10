@@ -359,7 +359,7 @@ img {
   border: none;
 
   width: 568px;
-  height: 86px;
+  min-height: 86px;
 }
 
 .search-form-btn:hover,
@@ -842,8 +842,8 @@ img {
 
 .hotels-selection-form .form-btn {
   display: block;
-  width: 138px;
-  height: 36px;
+  min-width: 138px;
+  min-height: 36px;
 
   margin: 0;
   margin-left: 84px;
@@ -1102,19 +1102,19 @@ img {
 
 .item-main-info .hotel-type,
 .item-main-info .btn-info {
-  width: 110px;
+  min-width: 110px;
   margin-right: 6px;
 }
 
 .item-main-info .hotel-price,
 .item-main-info .btn-booking {
-  width: 142px;
+  min-width: 142px;
 }
 
 .hotel-btn a {
   display: block;
 
-  height: 27px;
+  min-height: 27px;
 
   padding-top: 3px;
 
