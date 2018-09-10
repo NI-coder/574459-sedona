@@ -827,7 +827,9 @@ img {
 }
 
 .price-range .range-toggle:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .price-range .range-toggle-min {
@@ -1353,9 +1355,14 @@ img {
   fill: rgb(189, 187, 188);
 }
 
+@-webkit-keyframes moving-down {
+  0% {-webkit-transform: scaleY(0);transform: scaleY(0);}
+  100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
 @keyframes moving-down {
-  0% {transform: scaleY(0);}
-  100% {transform: scaleY(1);}
+  0% {-webkit-transform: scaleY(0);transform: scaleY(0);}
+  100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
 }
 
 .form-appearance {
@@ -1372,7 +1379,12 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 
-  animation-name: moving-down;
-  animation-duration: 2s;
-  transform-origin: center top;
+  -webkit-animation-name: moving-down;
+
+          animation-name: moving-down;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
 }
