@@ -379,18 +379,7 @@ img {
 }
 
 .hotel-search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  display: none;
 
   position: absolute;
   width: 568px;
@@ -1360,4 +1349,28 @@ img {
 .copyright-link:active path,
 .copyright-link:active rect {
   fill: rgb(189, 187, 188);
+}
+
+@keyframes moving-down {
+  0% {transform: scaleY(0);}
+  100% {transform: scaleY(1);}
+}
+
+.form-appearance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+
+  animation-name: moving-down;
+  animation-duration: 2s;
+  transform-origin: center top;
 }
