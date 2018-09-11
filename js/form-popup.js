@@ -1,13 +1,16 @@
 var btn = document.querySelector(".search-form-btn");
 var form = document.querySelector(".hotel-search-form");
 var arrival = form.querySelector("[name=arrival-day]");
-var departure = form.querySelector("[name=departure-day]");
+var adults = form.querySelector("[name=adults-counter]");
+var children = form.querySelector("[name=children-counter]");
 
 var isStorageSupport = true;
-var storage = "";
+var storageAdults = "";
+var storageChildren = "";
 
 try {
-  storage = localStorage.getItem("arrival");
+  storageAdults = localStorage.getItem("adults");
+  storageChildren = localStorage.getItem("children");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -15,23 +18,19 @@ try {
 btn.addEventListener("click", function(evt) {
   evt.preventDefault();
   form.classList.toggle("form-appearance");
+  arrival.focus();
 
-  if (storage) {
-    arrival.value = storage;
-    departure.focus();
-  } else {
-    arrival.focus();
+  if (storageAdults || storageChildren) {
+    adults.value = storageAdults;
+    children.value = storageChildren;
   }
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!arrival.value || !departure.value) {
-    evt.preventDefault();
-    console.log("Введите даты прибытия и отъезда");
-  } else {
+  if (adults.value || children.value) {
     if (isStorageSupport) {
-    localStorage.setItem("arrival", arrival.value);
-    localStorage.setItem("departure", departure.value);
+    localStorage.setItem("adults", adults.value);
+    localStorage.setItem("children", children.value);
     }
   }
 });
