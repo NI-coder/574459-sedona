@@ -15,9 +15,11 @@ try {
   isStorageSupport = false;
 }
 
+form.classList.add("form-vanishing");
+
 btn.addEventListener("click", function(evt) {
   evt.preventDefault();
-  form.classList.toggle("form-appearance");
+  form.classList.toggle("form-vanishing");
   arrival.focus();
 
   if (storageAdults || storageChildren) {
