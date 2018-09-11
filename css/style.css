@@ -1203,6 +1203,10 @@ img {
   background-image: url("../img/map.jpg");
 }
 
+.map-image .google-map {
+  border: none;
+}
+
 .main-footer-box {
   position: absolute;
   left: 0;
