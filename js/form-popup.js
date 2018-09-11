@@ -1,6 +1,7 @@
 var btn = document.querySelector(".search-form-btn");
 var form = document.querySelector(".hotel-search-form");
 var arrival = form.querySelector("[name=arrival-day]");
+var departure = form.querySelector("[name=departure-day]");
 var adults = form.querySelector("[name=adults-counter]");
 var children = form.querySelector("[name=children-counter]");
 
@@ -26,22 +27,31 @@ btn.addEventListener("click", function(evt) {
     adults.value = storageAdults;
     children.value = storageChildren;
   }
+
+  if (form.classList.contains("form-error")) {
+    form.classList.remove("form-error");
+  }
 });
 
 form.addEventListener("submit", function(evt) {
+  if (!arrival.value || !departure.value) {
+    evt.preventDefault();
+    form.classList.add("form-error");
+  }
+
   if (adults.value || children.value) {
     if (isStorageSupport) {
-    localStorage.setItem("adults", adults.value);
-    localStorage.setItem("children", children.value);
+      localStorage.setItem("adults", adults.value);
+      localStorage.setItem("children", children.value);
     }
   }
 });
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
-    if (form.classList.contains("form-appearance")) {
+    if (!form.classList.contains("form-vanishing")) {
       evt.preventDefault();
-      form.classList.remove("form-appearance");
+      form.classList.add("form-vanishing");
     }
   }
 });
