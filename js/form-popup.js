@@ -34,6 +34,10 @@ btn.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
+  if (form.classList.contains("form-error")) {
+    form.classList.remove("form-error");
+  }
+
   if (!arrival.value || !departure.value) {
     evt.preventDefault();
     form.classList.add("form-error");
