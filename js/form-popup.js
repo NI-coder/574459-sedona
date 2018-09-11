@@ -4,7 +4,6 @@ var arrival = form.querySelector("[name=arrival-day]");
 var departure = form.querySelector("[name=departure-day]");
 var adults = form.querySelector("[name=adults-counter]");
 var children = form.querySelector("[name=children-counter]");
-
 var isStorageSupport = true;
 var storageAdults = "";
 var storageChildren = "";
