@@ -23,6 +23,12 @@ btn.addEventListener("click", function(evt) {
   form.classList.toggle("form-vanishing");
   arrival.focus();
 
+  if (!form.classList.contains("form-vanishing")) {
+    form.classList.add("search-form-appearance");
+  } else {
+    form.classList.remove("search-form-appearance");
+  }
+
   if (storageAdults || storageChildren) {
     adults.value = storageAdults;
     children.value = storageChildren;

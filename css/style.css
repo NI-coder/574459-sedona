@@ -372,6 +372,7 @@ img {
   margin: 0 auto;
 }
 
+/*
 @-webkit-keyframes moving-down {
   0% {-webkit-transform: scaleY(0);transform: scaleY(0);}
   100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
@@ -381,6 +382,7 @@ img {
   0% {-webkit-transform: scaleY(0);transform: scaleY(0);}
   100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
 }
+*/
 
 .hotel-search-form {
   display: -webkit-box;
@@ -390,7 +392,7 @@ img {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+      justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -ms-flex-negative: 0;
@@ -410,6 +412,7 @@ img {
 
   background-color: rgb(255, 255, 255);
 
+/*
   -webkit-animation-name: moving-down;
           animation-name: moving-down;
   -webkit-animation-duration: 1s;
@@ -417,6 +420,7 @@ img {
   -webkit-transform-origin: center top;
       -ms-transform-origin: center top;
           transform-origin: center top;
+*/
 }
 
 .hotel-search-form p {
@@ -1375,6 +1379,26 @@ img {
 
 .form-vanishing {
   display: none;
+}
+
+@-webkit-keyframes moving-down {
+  0% {-webkit-transform: scaleY(0);transform: scaleY(0);}
+  100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
+@keyframes moving-down {
+  0% {-webkit-transform: scaleY(0);transform: scaleY(0);}
+  100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
+.search-form-appearance {
+  -webkit-animation-name: moving-down;
+          animation-name: moving-down;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
 }
 
 @keyframes shake {
